@@ -2,7 +2,7 @@ import express from "express";
 import userRouter from "./routes/user";
 import adminRouter from "./routes/admin";
 import contestRouter from "./routes/contest";
-    
+import { prisma } from "db/client";
 const app = express();
 
 app.use(express.json());
